@@ -3,17 +3,13 @@ const express = require('express');
 // const path = require('path');
 
 // Server routes
-const htmlRouter = require('./routes/html-routes.js');
-const apiRouter = require('./routes/api-routes.js');
+const htmlRoutes = require('./routes/html-routes.js');
+const apiRoutes = require('./routes/api-routes.js');
 
 const app = express();
+
 // Create port
-const PORT = 3001;
-
-
-
-
-
+const PORT = 3008;
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
@@ -24,9 +20,7 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-
-
-// Listner
+// Listener
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
