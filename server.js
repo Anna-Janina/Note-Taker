@@ -1,6 +1,6 @@
 // Dependencies
 const express = require('express');
-// const path = require('path');
+const path = require('path');
 
 // Server routes
 const htmlRoutes = require('./routes/html-routes.js');
@@ -17,7 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Get all files from the 'public' folder
 app.use(express.static('public'));
+// Api routes
 app.use('/api', apiRoutes);
+// Html routes
 app.use('/', htmlRoutes);
 
 // Listener

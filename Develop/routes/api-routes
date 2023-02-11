@@ -1,31 +1,28 @@
 // Dependencies
-
 const router = require('express').Router();
-
-
-
+const input = require('../db/db.json');
+const { writeNote, deleteNote } = require('../routes/index');
 
 // GET request
+router.get('/write', (req, res) => {
+    res.send(input);
+});
 
-
-
+router.get('/', (req, res) => {
+    res.send('Take this API');
+});
 
 // POST request
-
-
-
-
+router.post('/write', (req, res) => {
+    writeNote(req.body);
+    res.json();
+});
 
 //Delete request
-
-
-
-
-
-
-
-
-
+router.delete('/write/:id', (req, res) => {
+    deleteNote(req.params);
+    res.json();
+});
 
 
 module.exports = router;
