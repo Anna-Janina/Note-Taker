@@ -1,7 +1,7 @@
 // Dependencies
 const router = require('express').Router();
 const input = require('../db/db.json');
-const { writeNote, deleteNote } = require('../routes/index');
+const { writeNote, deleteNote } = require('./index');
 
 // GET request
 router.get('/write', (req, res) => {

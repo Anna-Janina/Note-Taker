@@ -3,9 +3,9 @@ const express = require('express');
 const path = require('path');
 
 // Server routes
-const htmlRoutes = require('./Develop/routes/api-routes');
-const apiRoutes = require('./Develop/routes/api-routes');
-const { clog } = require('./Develop/routes/index');
+const htmlRoutes = require('./routes/html-routes');
+const apiRoutes = require('./routes/api-routes');
+const { clog } = require('./routes/index');
 const app = express();
 
 // Create port
