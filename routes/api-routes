@@ -4,7 +4,7 @@ const input = require('../db/db.json');
 const { writeNote, deleteNote } = require('./index');
 
 // GET request
-router.get('/write', (req, res) => {
+router.get('/notes', (req, res) => {
     res.send(input);
 });
 
@@ -13,13 +13,13 @@ router.get('/', (req, res) => {
 });
 
 // POST request
-router.post('/write', (req, res) => {
+router.post('/notes', (req, res) => {
     writeNote(req.body);
     res.json();
 });
 
 //Delete request
-router.delete('/write/:id', (req, res) => {
+router.delete('/notes/:id', (req, res) => {
     deleteNote(req.params);
     res.json();
 });

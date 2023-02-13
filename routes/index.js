@@ -5,7 +5,7 @@ const write = require('../db/db.json');
 
 // Middleware for notes
 const writeNote = (note) => {
-    note.id = uuid();
+    note.id = Math.random().toString();
     const newNote = write || [];
     newNote.push(note);
     fs.writeFile('./db/db.json', JSON.stringify(newNote), (err) => {
