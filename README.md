@@ -8,36 +8,29 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+- [Build with](#Build)
 
 
 ## Description
-Generates quick and easy a README.md for any project
+Note Take is an application to write your notes, save them and delete them. 
 
-https://drive.google.com/file/d/1eMitHFbqD-IVUfJkWLOgmeNQW_3rlYzJ/view
+---- LINK -----
 
 
 ## Usage
-This is a mock repository
+node server.js
 
 
 ## Installation
-npm install
+npm install (express, uuid)
 
 
-## Contributing
-This is a test repo
-
-
-## Tests
-npm test
-
-
-## Questions
-- Find me on Github: (https://github.com/Anna-Janina)
-- For any questions, email me at: annajaninaschmidt@gmail.com
+## Build with
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- Node.js
 
 
 ## License
