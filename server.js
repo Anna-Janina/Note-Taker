@@ -9,7 +9,7 @@ const { clog } = require('./routes/index');
 const app = express();
 
 // Create port
-const PORT = 3008;
+const PORT = process.env.PORT || 3008;
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
