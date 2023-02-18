@@ -1,6 +1,5 @@
 // Import data
 const fs = require('fs');
-const uuid = require('uuid');
 const write = require('../db/db.json');
 
 // Middleware for notes
